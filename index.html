@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17365d">
+<title>مولدة نوفل</title>
+<style>
+:root{--navy:#17365d;--blue:#1677f2;--cyan:#199ed0;--bg:#f2f7fc;--ink:#183153;--muted:#70839b;--line:#e1eaf4;--green:#16a873;--red:#ef4444;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer;border:0;border-radius:9px;padding:11px 15px;font-weight:700;transition:.15s}button:hover{filter:brightness(.96)}.primary{background:var(--blue);color:#fff}.success{background:var(--green);color:white}.danger{background:var(--red);color:white}.ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}.topbar{height:76px;background:linear-gradient(100deg,#142b49,#1d416b);color:#fff;display:flex;align-items:center;justify-content:flex-end;padding:0 24px;box-shadow:0 3px 12px #102b4a20;position:relative}.brand{display:flex;align-items:center;justify-content:center;font-family:'Cairo','Tajawal',Tahoma,Arial,sans-serif;font-size:clamp(28px,3.2vw,40px);font-weight:900;letter-spacing:.2px;text-shadow:0 2px 10px #0002;position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap}.brand-icon{display:grid;place-items:center;background:#1677f2;border-radius:10px;width:42px;height:42px}.top-actions{display:flex;align-items:center;gap:10px}.top-actions span{font-size:13px;color:#d8e5f4}.layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:20px;padding:22px;max-width:1600px;margin:auto}.sidebar,.panel,.stat-card,.hero{background:var(--card);border:1px solid var(--line);border-radius:13px}.sidebar{padding:16px;height:max-content;position:sticky;top:12px}.side-title{font-size:20px;font-weight:800;margin:4px 6px 15px}.category-list{display:grid;gap:7px}.category{display:flex;align-items:center;gap:10px;width:100%;background:#fff;color:var(--ink);text-align:right;border:1px solid transparent;padding:13px 12px}.category.active{background:linear-gradient(100deg,#1682f8,#2368dd);color:#fff}.category .emoji{font-size:21px;width:28px;text-align:center}.category .count{margin-right:auto;background:#edf3fa;color:#344c6b;border-radius:20px;min-width:30px;text-align:center;padding:5px;font-size:13px}.category.active .count{background:#ffffff38;color:white}.add-list{width:100%;margin-top:15px}.main{min-width:0}.hero{background:linear-gradient(110deg,#199fc9,#356bdc 65%,#5735c6);color:white;padding:25px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:172px;margin-bottom:20px}.hero-label{font-size:17px;opacity:.9}.hero-total{font-size:clamp(28px,3.2vw,42px);font-weight:900;margin-top:8px;word-break:break-word}.hero-stats{display:flex;gap:12px;flex-wrap:wrap}.mini-stat{background:#ffffff18;border:1px solid #ffffff35;border-radius:10px;padding:12px 16px;min-width:130px}.mini-stat strong{display:block;font-size:22px;margin-bottom:4px}.panel{padding:18px}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:17px}.panel-title{font-size:23px;font-weight:900;display:flex;align-items:center;gap:10px}.controls{display:flex;gap:9px;flex-wrap:wrap}.search{border:1px solid var(--line);border-radius:9px;padding:11px 12px;min-width:180px;max-width:100%;outline-color:var(--blue)}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:9px}table{border-collapse:collapse;width:100%;min-width:720px}th{background:#eef5fd;font-size:14px}th,td{padding:14px 12px;text-align:center;border-bottom:1px solid var(--line)}tbody tr:hover{background:#f8fbff}tbody tr:last-child td{border-bottom:0}.name-cell{text-align:right;font-weight:700}.actions{display:flex;gap:7px;justify-content:center}.small-btn{padding:8px 11px;font-size:13px}.sum-row{background:#eaf3ff;font-weight:900}.empty{text-align:center;padding:36px 12px;color:var(--muted)}.footer-row{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;padding-top:16px;color:var(--muted);font-size:13px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-bottom:18px}.stat-card{padding:16px}.stat-card .label{color:var(--muted);font-size:13px}.stat-card .value{font-size:23px;font-weight:900;margin-top:8px}.modal-backdrop{position:fixed;inset:0;background:#071a32a8;display:none;align-items:center;justify-content:center;padding:16px;z-index:10}.modal-backdrop.open{display:flex}.modal{background:white;border-radius:15px;padding:22px;width:min(460px,100%);box-shadow:0 20px 70px #0003}.modal h2{margin:0 0 18px}.field{display:grid;gap:7px;margin-bottom:14px}.field label{font-weight:700;font-size:14px}.field input,.field select{padding:12px;border:1px solid #d7e2ef;border-radius:9px;width:100%;outline-color:var(--blue)}.modal-actions{display:flex;gap:9px;justify-content:flex-start;margin-top:18px}.notice{font-size:12px;color:var(--muted);margin-top:14px;line-height:1.7}.toast{position:fixed;bottom:20px;left:20px;background:#17365d;color:#fff;padding:12px 18px;border-radius:10px;box-shadow:0 8px 25px #0002;display:none;z-index:20}.toast.show{display:block}@media(max-width:900px){.layout{grid-template-columns:1fr;padding:12px}.sidebar{position:static}.category-list{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:20px;align-items:flex-start;flex-direction:column}.hero-stats{width:100%}.mini-stat{flex:1}.cards{grid-template-columns:1fr 1fr}}@media(max-width:520px){.topbar{padding:0 13px;height:72px}.brand{font-size:clamp(25px,7vw,32px);left:50%}.top-actions span{display:none}.layout{gap:12px}.category-list{grid-template-columns:1fr 1fr}.category{padding:10px 8px;font-size:14px}.panel{padding:12px}.panel-title{font-size:19px}.controls{width:100%}.controls>*{flex:1}.search{min-width:100%}.cards{grid-template-columns:1fr 1fr}.stat-card .value{font-size:19px}.hero-total{font-size:30px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span>مولدة نوفل</span></div>
+  <div class="top-actions"><span>اشتراكات المولدة</span></div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="side-title">📂 قوائم المولدة</div>
+    <div class="category-list" id="categoryList"></div>
+    <button class="primary add-list" id="addListBtn">＋ إضافة قائمة جديدة</button>
+    <p class="notice">أضف القوائم التي تحتاجها، وستُحفظ البيانات على هذا الجهاز داخل المتصفح.</p>
+  </aside>
+  <main class="main">
+    <section class="hero">
+      <div><div class="hero-label">💰 المبلغ الكلي في القائمة المحددة</div><div class="hero-total" id="heroTotal">0 د.ع</div></div>
+      <div class="hero-stats">
+        <div class="mini-stat"><strong id="subscriberCount">0</strong><span>👥 المشتركين</span></div>
+        <div class="mini-stat"><strong id="ampTotal">0</strong><span>⚡ مجموع الأمبيرات</span></div>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="stat-card"><div class="label">إجمالي اشتراكات المولدة</div><div class="value" id="allTotal">0 د.ع</div></div>
+      <div class="stat-card"><div class="label">عدد القوائم</div><div class="value" id="listCount">0</div></div>
+      <div class="stat-card"><div class="label">عدد المشتركين الكلي</div><div class="value" id="allSubscribers">0</div></div>
+    </section>
+    <section class="panel">
+      <div class="panel-head">
+        <div class="panel-title"><span id="currentEmoji">⚡</span><span id="currentTitle">قائمة الكهرباء</span></div>
+        <div class="controls">
+          <input class="search" id="searchInput" placeholder="🔎 ابحث عن مشترك..." aria-label="ابحث عن مشترك">
+          <button class="success" id="addSubscriberBtn">＋ إضافة مشترك</button>
+          <button class="ghost" id="renameListBtn">✎ تعديل اسم القائمة</button>
+          <button class="danger" id="deleteListBtn">حذف القائمة</button>
+          
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>اسم المشترك</th><th>المبلغ (د.ع)</th><th>عدد الأمبيرات</th><th>الإجراءات</th></tr></thead>
+          <tbody id="subscriberRows"></tbody>
+          <tfoot><tr class="sum-row"><td colspan="2">المجموع</td><td id="tableTotal">0 د.ع</td><td id="tableAmps">0 أمبير</td><td id="tableCount">0 مشترك</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="footer-row"><span id="showingText">عرض 0 مشترك</span><button class="ghost" id="clearSearchBtn">مسح البحث</button></div>
+    </section>
+  </main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <h2 id="modalTitle">إضافة مشترك</h2><form id="editorForm">
+      <div id="subscriberFields">
+        <div class="field"><label for="personName">اسم المشترك</label><input id="personName" maxlength="100" placeholder="اكتب اسم المشترك" required></div>
+        <div class="field"><label for="personAmount">المبلغ بالدينار العراقي</label><input id="personAmount" type="number" min="0" step="1" placeholder="مثال: 150000" required></div>
+        <div class="field"><label for="personAmps">عدد الأمبيرات</label><input id="personAmps" type="number" min="0" step="0.1" placeholder="مثال: 5" required></div>
+      </div>
+      <div id="listFields" hidden>
+        <div class="field"><label for="listName">اسم القائمة</label><input id="listName" maxlength="60" placeholder="مثال: الكهرباء" required></div>
+        <div class="field"><label for="listEmoji">رمز القائمة</label><select id="listEmoji"><option>⚡</option><option>💧</option><option>🌐</option><option>📞</option><option>📺</option><option>🏠</option><option>📦</option></select></div>
+      </div>
+      <div class="modal-actions"><button class="primary" type="submit" id="saveBtn">حفظ</button><button class="ghost" type="button" id="cancelBtn">إلغاء</button></div>
+    </form>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id);
+const defaultData={activeId:'generator',lists:[
+{id:'generator',name:'اشتراكات المولدة',emoji:'⚡',subscribers:[]}]};
+let state=loadState(), editor={mode:'',listId:null,personId:null};
+function loadState(){try{const v=JSON.parse(localStorage.getItem('subscriptionManagerData'));if(v&&Array.isArray(v.lists)&&v.lists.length){v.lists.forEach(l=>{if(!Array.isArray(l.subscribers))l.subscribers=[]});if(!v.lists.some(l=>l.id===v.activeId))v.activeId=v.lists[0].id;return v}}catch(e){}return structuredClone(defaultData)}
+function persist(){try{localStorage.setItem('subscriptionManagerData',JSON.stringify(state))}catch(e){notify('تعذر الحفظ في المتصفح. صدّر نسخة احتياطية.')} }
+function activeList(){return state.lists.find(l=>l.id===state.activeId)||state.lists[0]}
+function money(n){return new Intl.NumberFormat('en-US',{maximumFractionDigits:2}).format(Number(n)||0)+' د.ع'}
+function sum(list){return list.subscribers.reduce((s,p)=>s+(Number(p.amount)||0),0)}
+function amps(list){return list.subscribers.reduce((s,p)=>s+(Number(p.amps)||0),0)}
+function id(){return 'x'+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function safe(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function notify(msg){$('toast').textContent=msg;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2400)}
+function render(){
+ const list=activeList();if(!list)return;
+ $('categoryList').innerHTML=state.lists.map(l=>`<button class="category ${l.id===list.id?'active':''}" data-list="${safe(l.id)}"><span class="emoji">${safe(l.emoji||'📁')}</span><span>${safe(l.name)}</span><span class="count">${l.subscribers.length}</span></button>`).join('');
+ $('heroTotal').textContent=money(sum(list));$('subscriberCount').textContent=list.subscribers.length;$('ampTotal').textContent=Number(amps(list).toFixed(2));
+ $('allTotal').textContent=money(state.lists.reduce((s,l)=>s+sum(l),0));$('listCount').textContent=state.lists.length;$('allSubscribers').textContent=state.lists.reduce((s,l)=>s+l.subscribers.length,0);
+ $('currentEmoji').textContent=list.emoji||'📁';$('currentTitle').textContent=list.name;
+ const q=$('searchInput').value.trim().toLocaleLowerCase('ar');const filtered=list.subscribers.filter(p=>p.name.toLocaleLowerCase('ar').includes(q));
+ $('subscriberRows').innerHTML=filtered.length?filtered.map((p,i)=>`<tr><td>${i+1}</td><td class="name-cell">${safe(p.name)}</td><td>${money(p.amount)}</td><td>${Number(p.amps)||0}</td><td><div class="actions"><button class="primary small-btn" data-edit="${safe(p.id)}">✎ تعديل</button><button class="danger small-btn" data-delete="${safe(p.id)}">🗑 حذف</button></div></td></tr>`).join(''):`<tr><td colspan="5" class="empty">${q?'لا توجد نتائج مطابقة للبحث':'لا يوجد مشتركون في هذه القائمة بعد. اضغط «إضافة مشترك» للبدء.'}</td></tr>`;
+ $('tableTotal').textContent=money(sum(list));$('tableAmps').textContent=Number(amps(list).toFixed(2))+' أمبير';$('tableCount').textContent=list.subscribers.length+' مشترك';$('showingText').textContent=`عرض ${filtered.length} من ${list.subscribers.length} مشترك`;
+ persist();
+}
+function openModal(mode,person=null){
+ editor={mode,listId:activeList().id,personId:person?.id||null};
+ const isList=mode==='addList'||mode==='renameList';
+ $('subscriberFields').hidden=isList;$('listFields').hidden=!isList;
+ $('modalTitle').textContent=mode==='addPerson'?'إضافة مشترك':mode==='editPerson'?'تعديل بيانات المشترك':mode==='addList'?'إضافة قائمة جديدة':'تعديل اسم القائمة';
+ $('saveBtn').textContent=mode.startsWith('add')?'إضافة':'حفظ التعديلات';
+ $('personName').value=person?.name||'';$('personAmount').value=person?.amount??'';$('personAmps').value=person?.amps??'';
+ $('listName').value=mode==='renameList'?activeList().name:'';$('listEmoji').value=activeList().emoji||'📁';
+ $('modalBackdrop').classList.add('open');setTimeout(()=>$(isList?'listName':'personName').focus(),50);
+}
+function closeModal(){$('modalBackdrop').classList.remove('open')}
+$('categoryList').addEventListener('click',e=>{const b=e.target.closest('[data-list]');if(b){state.activeId=b.dataset.list;$('searchInput').value='';render()}});
+$('addListBtn').addEventListener('click',()=>openModal('addList'));
+$('addSubscriberBtn').addEventListener('click',()=>openModal('addPerson'));
+$('renameListBtn').addEventListener('click',()=>openModal('renameList'));
+$('deleteListBtn').addEventListener('click',()=>{const l=activeList();if(state.lists.length===1){notify('يجب أن تبقى قائمة واحدة على الأقل.');return}if(confirm(`هل تريد حذف قائمة «${l.name}» وجميع المشتركين فيها؟ لا يمكن التراجع عن هذا الإجراء.`)){state.lists=state.lists.filter(x=>x.id!==l.id);state.activeId=state.lists[0].id;render();notify('تم حذف القائمة.')}});
+$('subscriberRows').addEventListener('click',e=>{
+ const edit=e.target.closest('[data-edit]');const del=e.target.closest('[data-delete]');const l=activeList();
+ if(edit){const p=l.subscribers.find(x=>x.id===edit.dataset.edit);if(p)openModal('editPerson',p)}
+ if(del){const p=l.subscribers.find(x=>x.id===del.dataset.delete);if(p&&confirm(`هل تريد حذف المشترك «${p.name}»؟`)){l.subscribers=l.subscribers.filter(x=>x.id!==p.id);render();notify('تم حذف المشترك وتحديث الإجمالي.')}}
+});
+$('editorForm').addEventListener('submit',e=>{
+ e.preventDefault();const l=state.lists.find(x=>x.id===editor.listId);if(!l)return;
+ if(editor.mode==='addList'||editor.mode==='renameList'){
+ const name='اشتراكات المولدة';if(!name){notify('اكتب اسم القائمة أولاً.');return}
+ if(editor.mode==='addList'){const newList={id:id(),name,emoji:$('listEmoji').value,subscribers:[]};state.lists[0].name='اشتراكات المولدة';state.lists[0].emoji='⚡';}
+ else{l.name=name;l.emoji=$('listEmoji').value}
+ }else{
+ const name=$('personName').value.trim(),amount=Number($('personAmount').value),amp=Number($('personAmps').value);
+ if(!name||$('personAmount').value===''||$('personAmps').value===''||!Number.isFinite(amount)||amount<0||!Number.isFinite(amp)||amp<0){notify('تحقق من الاسم والمبلغ وعدد الأمبيرات.');return}
+ if(editor.mode==='addPerson')l.subscribers.push({id:id(),name,amount,amps:amp});
+ else{const p=l.subscribers.find(x=>x.id===editor.personId);if(p)Object.assign(p,{name,amount,amps:amp})}
+ }
+ closeModal();render();notify('تم الحفظ وتحديث الإجماليات تلقائياً.');
+});
+$('cancelBtn').addEventListener('click',closeModal);$('modalBackdrop').addEventListener('click',e=>{if(e.target===$('modalBackdrop'))closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+$('searchInput').addEventListener('input',()=>{const keep=$('searchInput').value;render();$('searchInput').value=keep;$('searchInput').focus();$('searchInput').setSelectionRange(keep.length,keep.length)});
+$('clearSearchBtn').addEventListener('click',()=>{$('searchInput').value='';render()});
+render();notify('تم استيراد البيانات بنجاح.')}catch(err){notify('ملف النسخة الاحتياطية غير صالح.')}e.target.value=''});
+render();
+})();
+</script>
+</body>
+</html>
